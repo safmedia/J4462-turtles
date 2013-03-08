@@ -1,0 +1,14 @@
+from django.db import models
+
+class campus_crime(models.Model):
+  instname = models.CharField(max_length=255)
+	total_enr = models.CharField(max_length=255)
+	murder = models.IntegerField()
+	manslaughter = models.IntegerField()
+	forcible = models.IntegerField()
+	nonforce = models.IntegerField()
+	robbery = models.IntegerField()
+	agg_aslt = models.IntegerField()
+	burglary = models.IntegerField()
+	vehicle = models.IntegerField()
+	arson= models.IntegerField()
